@@ -1,0 +1,261 @@
+.tooltip {
+    border: solid;
+    white-space: pre-wrap;
+    visibility: hidden;
+    width: 140px;
+    background-color: #1a4f01e5;
+    color: #000000e5;
+    text-align: center;
+    border-radius: 1px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+#title:hover .tooltip {
+visibility: visible;
+}
+
+input[type="text"] {
+    font-size: 14pt;
+    height: 30px;
+    width: 300px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.btn-sm{
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.overflow-title{
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.bg-dark-blue{
+    background-color: #0c7dd9;
+}
+
+img{
+    margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-dark{
+    color: #323232e5;
+}
+
+.text-green{
+    color: #1a4f01e5;
+}
+
+.border-gold {
+    border: solid;
+    border-color: rgb(254, 204, 4);
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-xlarge{
+    font-size: x-large;
+}
+
+.text-xxxlarge{
+    font-size: 32pt;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: auto 140px auto;
+    grid-template-rows: auto 40px 30px;
+    row-gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.book-item{
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.default-image{
+    display: grid;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    height: 209px;
+    width: 140px;
+    background-color: #0c7dd9;
+}
+
+.shelf{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.menu{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.flex-column{
+    justify-content: center;
+}
+
+.search-bar{
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+    margin-left: 12%;
+    column-gap: 0;
+    display: grid;
+    padding: 10px;
+    width: 480px;
+}
+
+.name{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 32pt;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    padding-left: 25%;
+    justify-content: start;
+}
+
+.shelf-buttons {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    padding: 15px;
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .search-bar{
+        grid-template-columns: auto;
+        margin: auto;
+        justify-content: center;
+        row-gap: 5px;
+        width: 90%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name{
+        display: flex;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .shelf-buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 15px;
+        font-size: large;
+    }
+
+    .shelf{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .shelf{
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    .shelf{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+    .shelf{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .shelf{
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .shelf{
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+}
+
+/* BUTTONS START */
+
+.btn{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.btn-round-1{
+    border-radius: 1px;
+}
+
+.btn-border-color-1{
+    border-color: #1a4f01e5;
+}
+
+.bg-color-1{
+    background-color: #29660ce5;
+}
+
+.btn-sm:hover{
+    background-color: #3c831ba1;
+    box-shadow: 0px 0px 5px 1px rgba(60,131,27,0.75);
+}
+
+.btn:hover{
+    background-color: #3c831ba1;
+    box-shadow: 0px 0px 5px 1px rgba(60,131,27,0.75);
+}
+
+.btn-clicked{
+    background-color: #3c831ba1;
+    box-shadow: 0px 0px 5px 1px rgba(60,131,27,0.75);
+}
+
+.btn-sm-clicked{
+    background-color: #3c831ba1;
+    box-shadow: 0px 0px 5px 1px rgba(60,131,27,0.75);
+}
+
+/* BUTTONS END */
